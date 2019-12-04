@@ -140,7 +140,6 @@ body {
 }
 
 .third-section-advantages {
-	float: none;
 	width: 100%;
 }
 
@@ -150,6 +149,7 @@ body {
 	list-style: none;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 }
 
 .third-section-advantages._list-item {
@@ -158,6 +158,12 @@ body {
 	margin: 5% 1%;
 
 	text-align: center;
+}
+
+._list {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
 }
 
 ._list-item._image {
@@ -180,5 +186,17 @@ body {
 ._list-item p {
 	font-size: 20px;
 
+	text-align: justify;
+}
+
+._center {
 	text-align: center;
+}
+
+._detail-text {
+	display: inline-block;
+	color: #6264a7;
+	font-size: 2rem;
+	font-weight: bold;
+	width: 100%;
 }
