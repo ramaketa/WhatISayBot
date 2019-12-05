@@ -195,6 +195,7 @@ body {
 }
 
 ._detail-text {
+	margin: 50px 0;
 	display: block;
 	color: #6264a7;
 	font-size: 2rem;
@@ -216,9 +217,8 @@ body {
 .footer ul {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
 	list-style: none;
 }
 
-.footer ul li {
-	margin: 0 22%;
-}
