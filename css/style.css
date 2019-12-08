@@ -2,6 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 
+	width: 100%;
+
 	background-color: rgb(245,245,245);
 
 	font-family: 'Montserrat', sans-serif;
@@ -75,6 +77,10 @@ body {
 	padding: 5px;
 
 	border-radius: 4px;
+}
+
+.container {
+	/*min-height: 1250px !important;*/
 }
 
 .container.first-section {
@@ -271,4 +277,151 @@ body {
 	width: 100%;
 	height: 64px;
 	justify-content: center;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.header-min {
+	display: none;
+}
+
+#header-navigation-panel-min {
+	display: none;
+}
+
+.third-section-advantages-min {
+	display: none;
+}
+
+.description-section-min {
+	display: none;
+}
+
+/*Adaptive*/
+@media (max-width: 400px) {
+	.header {
+		display: none;
+	}
+	.header-navigation-panel {
+		display: none;
+	}
+	.header__dropdown-menu {
+		width: 32px;
+		height: 32px;
+		margin-right: 10%;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background: url("../menu.png");
+	}
+	.logo-name {
+		border: none;
+	}
+	.header-min {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		background-color: #6264a7;
+		color: white;
+		height: 50px;
+	}
+	#header-navigation-panel-min {
+		width: 100%;
+	}
+	#header-navigation-panel-min ul {
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		text-align: center;
+		border-top: 1px solid #ffffff;
+		margin: 0;
+		padding: 0;
+	}
+	#header-navigation-panel-min ul li {
+		color: white;
+		background-color: #6264a7;
+		border-bottom: 1px solid white;
+		margin: 0;
+		padding: 10px 0;
+	}
+	.container {
+		flex-direction: column;
+		justify-content: center;
+		min-height: auto;
+	}
+	.container.first-section {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		float: none;
+		width: 80%;
+	}
+	.container .first-section._description-text._main-text {
+		font-size: 25px;
+	}
+	.container.second-section {
+		display: none;
+	}
+	._detail-text {
+		font-size: 1.5rem;
+		margin: 15px 0 0 0;
+	}
+	.third-section-advantages {
+		display: none;
+	}
+	.third-section-advantages-min {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border-bottom: 2px solid #6264a7;
+	}
+	.third-section-advantages-min ul {
+		width: 80%;
+		list-style: none;
+		text-align: center;
+	}
+	.third-section-advantages-min h3 {
+		font-size: 1.3rem;
+
+		color: #541049 ;
+	}
+	.description-section {
+		display: none;
+	}
+	.description-section-min {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.description-section-min .photo-text-section {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 25px 0;
+		text-align: center;
+	}
+	.description-section-min .photo-text-section .text-section {
+		width: 90%;
+		margin: 10px 5%;
+		font-size: 1rem;
+		float: none;
+		text-align: center;
+	}
+	.description-section-min .photo-text-section .photo-section {
+		width: 100%;
+		float: none;
+		background-position: center !important;
+	}
+	.footer ul {
+		flex-direction: column;
+		text-align: center;
+
+		padding: 0;
+	}
+
 }

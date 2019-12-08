@@ -20,11 +20,29 @@
             <li>О продукте</li>
             <li>Преимущества</li>
             <li>Попробовать</li>
-            <li class="header-navigation-panel search-section"><i class="fas fa-search"></i></li>
+            <li class="header-navigation-panel search-section">
+                <input type="text" style="background-color: #6264a7; border: none; width: 70%; color: white;">
+                <i class="fas fa-search"></i></li>
         </ul>
     </div>
 </div>
-<div class="container" style="min-height: 1250px">
+
+<div class="header-min">
+    <div class="header-logo-panel">
+        <div class="logo-image"></div>
+        <div class="logo-name">What I Say</div>
+    </div>
+    <div class="header__dropdown-menu" onclick="showMenu()"></div>
+</div>
+<div id="header-navigation-panel-min">
+    <ul>
+        <li><a href="">О продукте</a></li>
+        <li><a href="">Преимущества</a></li>
+        <li><a href="">Попробовать</a></li>
+    </ul>
+</div>
+
+<div class="container" style="min-height: 1250px;">
     <div class="container first-section">
         <div class="first-section _description-text">
             <h3 class="first-section _description-text _big-text">WHAT I SAY</h3>
@@ -66,6 +84,33 @@
             </li>
         </ul>
     </div>
+    <div class="third-section-advantages-min ">
+        <ul>
+            <li>
+                <div class="_list-item-image" style="background-image: url('full_eehfumY12.png')"></div>
+                <h3>Низкая стоимость</h3>
+                <p>Откажитесь использования мобильных приложений в пользу ботов и вы сэкономите массу денег и
+                    нервов.</p>
+            </li>
+            <li>
+                <div class="_list-item-image" style="background-image: url('low-traffic2.png')"></div>
+                <h3>Гибкость и скорость ответа</h3>
+                <p>Мгновенная реакция. Вам больше не придется ждать перевода</p>
+            </li>
+            <li>
+                <div class="_list-item-image" style="background-image: url('responsive.png')"></div>
+                <h3>Не требует установки и авторизации</h3>
+                <p>Установка и авторизация не нужны. Мессенджер Telegram есть почти у всех, поэтому не придется
+                    устанавливать приложения на смартфон и регистрироваться в нем.</p>
+            </li>
+            <li>
+                <div class="_list-item-image" style="background-image: url('low-traffic21.png')"></div>
+                <h3>Расходует мало трафика</h3>
+                <p>Малый расход трафика. Текстовый интерфейс не тратит важные для клиента мегабайты на загрузку картинок
+                    и тяжелых сайтов, он пишет боту и получает нужную информацию.</p>
+            </li>
+        </ul>
+    </div>
 </div>
 <div class="_detail-text _center">Описание</div>
 <div class="description-section">
@@ -74,16 +119,20 @@
              style="background: url(resources/Gmail/IMG_9778.jpg) no-repeat; background-size: contain"></div>
         <div class="text-section">
             Технологии развиваются с бешеной скоростью, социальные сети и мессенджеры предлагают пользователям все новые
-            и новые возможности. В частности, в мессенджерах можно пользоваться ботами. В наше время до сих пор существует проблема
-            коммуникации людей разных стран. Этот языковой барьер можно преодолеть с помощью быстрого и удобного в использовании
+            и новые возможности. В частности, в мессенджерах можно пользоваться ботами. В наше время до сих пор
+            существует проблема
+            коммуникации людей разных стран. Этот языковой барьер можно преодолеть с помощью быстрого и удобного в
+            использовании
             телеграмм-бота WHAT i SAY.
         </div>
     </div>
     <div class="photo-text-section">
         <div class="text-section">
             Сейчас люди обмениваются не только текстовыми сообщениями, но все чаще начинают использовать голосовые.
-            Тем самым появляется проблема восприятия иностранной речи на слух. Чтобы избежать возможного непонимания собеседника
-            можно воспользоваться телеграм-ботом WHATiSAY, который поможет не только предоставить полученное голосовое сообщение в текст,
+            Тем самым появляется проблема восприятия иностранной речи на слух. Чтобы избежать возможного непонимания
+            собеседника
+            можно воспользоваться телеграм-ботом WHATiSAY, который поможет не только предоставить полученное голосовое
+            сообщение в текст,
             но и перевести его на соответсвующий язык.
         </div>
         <div class="photo-section"
@@ -93,17 +142,66 @@
     <div class="photo-text-section">
         <div class="photo-section"
              style="background: url(resources/Gmail/IMG_9782.jpg) no-repeat; background-size: contain"></div>
-        <div class="text-section">Телеграм-бота можно легко найти в поиске, лишь начав вводить его название в поисковой строке.
+        <div class="text-section">Телеграм-бота можно легко найти в поиске, лишь начав вводить его название в поисковой
+            строке.
             Работа начинается со стартовой комнады /start, после чего бот готов к переводу пересланных ему сообщений.
         </div>
     </div>
     <div class="photo-text-section">
-        <div class="text-section">Получив пересланное голосовое сообщение, WHATiSAY бот моментально предоставляет его перевод
-            в текстовом формате. Тем самым позволяя не выходя из месенджера легко продолжать общение с собеседником, даже если
+        <div class="text-section">Получив пересланное голосовое сообщение, WHATiSAY бот моментально предоставляет его
+            перевод
+            в текстовом формате. Тем самым позволяя не выходя из месенджера легко продолжать общение с собеседником,
+            даже если
             информация плохо воспринимается на слух.
         </div>
         <div class="photo-section"
              style="background: url(resources/Gmail/IMG_9783.jpg) no-repeat; background-size: contain; background-position: right"></div>
+    </div>
+</div>
+<div class="description-section-min">
+    <div class="photo-text-section">
+        <div class="text-section">
+            Технологии развиваются с бешеной скоростью, социальные сети и мессенджеры предлагают пользователям все новые
+            и новые возможности. В частности, в мессенджерах можно пользоваться ботами. В наше время до сих пор
+            существует проблема
+            коммуникации людей разных стран. Этот языковой барьер можно преодолеть с помощью быстрого и удобного в
+            использовании
+            телеграмм-бота WHAT i SAY.
+        </div>
+        <div class="photo-section"
+             style="background: url(resources/Gmail/IMG_9778.jpg) no-repeat; background-size: contain"></div>
+    </div>
+    <div class="photo-text-section">
+        <div class="text-section">
+            Сейчас люди обмениваются не только текстовыми сообщениями, но все чаще начинают использовать голосовые.
+            Тем самым появляется проблема восприятия иностранной речи на слух. Чтобы избежать возможного непонимания
+            собеседника
+            можно воспользоваться телеграм-ботом WHATiSAY, который поможет не только предоставить полученное голосовое
+            сообщение в текст,
+            но и перевести его на соответсвующий язык.
+        </div>
+        <div class="photo-section"
+             style="background: url(resources/Gmail/IMG_9780.jpg) no-repeat; background-size: contain;">
+        </div>
+    </div>
+    <div class="photo-text-section">
+        <div class="text-section">Телеграм-бота можно легко найти в поиске, лишь начав вводить его название в поисковой
+            строке.
+            Работа начинается со стартовой комнады /start, после чего бот готов к переводу пересланных ему сообщений.
+        </div>
+        <div class="photo-section"
+             style="background: url(resources/Gmail/IMG_9782.jpg) no-repeat; background-size: contain"></div>
+    </div>
+    <div class="photo-text-section">
+        <div class="text-section">Получив пересланное голосовое сообщение, WHATiSAY бот моментально предоставляет его
+            перевод
+            в текстовом формате. Тем самым позволяя не выходя из месенджера легко продолжать общение с собеседником,
+            даже если
+            информация плохо воспринимается на слух.
+        </div>
+        <div class="photo-section"
+             style="background: url(resources/Gmail/IMG_9783.jpg) no-repeat; background-size: contain;">
+        </div>
     </div>
 </div>
 <div class="section-up">
@@ -111,10 +209,10 @@
 </div>
 <div class="footer">
     <ul>
-        <li>Описание</li>
-        <li>Преимущества</li>
-        <li>Попробовать</li>
-        <li>Поддержка</li>
+        <li><a href="">Описание</a></li>
+        <li><a href="">Преимущества</a></li>
+        <li><a href="">Попробовать</a></li>
+        <li><a href="">Поддержка</a></li>
     </ul>
 </div>
 
