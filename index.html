@@ -17,9 +17,9 @@
     </div>
     <div class="header-navigation-panel">
         <ul>
-            <li>О продукте</li>
-            <li>Преимущества</li>
-            <li>Попробовать</li>
+            <li onclick="toDescription()">О продукте</li>
+            <li onclick="toAdvantages()">Преимущества</li>
+            <li><a href="http://t.me/WhatISay_bot">Попробовать</a></li>
             <li class="header-navigation-panel search-section">
                 <input type="text" style="background-color: #6264a7; border: none; width: 70%; color: white;">
                 <i class="fas fa-search"></i></li>
@@ -36,9 +36,9 @@
 </div>
 <div id="header-navigation-panel-min">
     <ul>
-        <li><a href="">О продукте</a></li>
-        <li><a href="">Преимущества</a></li>
-        <li><a href="">Попробовать</a></li>
+        <li onclick="toDescription()">О продукте</li>
+        <li onclick="toAdvantages()">Преимущества</li>
+        <li><a href="http://t.me/WhatISay_bot">Попробовать</a></li>
     </ul>
 </div>
 
@@ -49,13 +49,16 @@
             <h3 class="first-section _description-text _main-text">Телеграмм бот для распознования и перевода речи</h3>
         </div>
         <div class="first-section _try-buttons">
-            <button class="_white-button">Попробовать</button>
+            <button class="_white-button" onclick="goToBot()">Попробовать</button>
             <br>
-            <button class="_lilac-button">Описание</button>
+            <button class="_lilac-button" onclick="toDescription()">Описание</button>
         </div>
     </div>
     <div class="container second-section"></div>
-    <div style="width: 100%" class="_detail-text _center">Наши преимущества</div>
+    <div style="width: 100%" class="_detail-text _center">
+        <p id="advantages"></p>
+        Наши преимущества
+    </div>
     <div class="third-section-advantages ">
         <ul class=" _list">
 
@@ -112,7 +115,10 @@
         </ul>
     </div>
 </div>
-<div class="_detail-text _center">Описание</div>
+<div class="_detail-text _center">
+    <p id="description"></p>
+    Описание
+</div>
 <div class="description-section">
     <div class="photo-text-section">
         <div class="photo-section"
@@ -209,10 +215,10 @@
 </div>
 <div class="footer">
     <ul>
-        <li><a href="">Описание</a></li>
-        <li><a href="">Преимущества</a></li>
-        <li><a href="">Попробовать</a></li>
-        <li><a href="">Поддержка</a></li>
+        <li><a href="#description">Описание</a></li>
+        <li><a href="#advantages">Преимущества</a></li>
+        <li><a href="http://t.me/WhatISay_bot">Попробовать</a></li>
+        <li><a href="http://t.me/WhatISay_bot">Поддержка</a></li>
     </ul>
 </div>
 

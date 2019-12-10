@@ -11,3 +11,15 @@ function showMenu() {
         dropDown.style.display = 'block';
     }
 }
+
+function goToBot() {
+    location.href = 'http://t.me/WhatISay_bot;'
+}
+
+function toAdvantages() {
+    location.hash = '#advantages';
+}
+
+function toDescription() {
+    location.hash = '#description'
+}

@@ -300,8 +300,12 @@ a {
 	display: none;
 }
 
+li:hover {
+	cursor: pointer;
+}
+
 /*Adaptive*/
-@media (max-width: 400px) {
+@media (min-width: 320px) and (max-width: 1000px) {
 	.header {
 		display: none;
 	}
@@ -383,6 +387,8 @@ a {
 		width: 80%;
 		list-style: none;
 		text-align: center;
+		padding: 0;
+		margin-left: 10%;
 	}
 	.third-section-advantages-min h3 {
 		font-size: 1.3rem;
@@ -422,6 +428,9 @@ a {
 		text-align: center;
 
 		padding: 0;
+	}
+	.container {
+		min-height: unset !important;
 	}
 
 }
